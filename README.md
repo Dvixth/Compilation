@@ -47,9 +47,11 @@ Here's an example of how to use the code:
    ```bash
    git clone https://github.com/your-username/your-repository.git
 2. Navigate to the repository directory:
-cd your-repository
+     ```bash
+   cd your-repository
 3. Run the Python script:
-python Mini_C_Compiler.py
+   ```bash
+   python Mini_C_Compiler.py
 
 ## Contribution
 Contributions to this project are welcome. You can contribute by:
