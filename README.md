@@ -1,10 +1,10 @@
 # README
 
 ## Introduction
-This repository contains code for defining a context-free grammar and implementing analysis procedures for a simple language. The language features a set of non-terminal symbols (*VN*) and an analysis table (*TA*) to facilitate parsing. The provided code includes functions for parsing input strings according to the defined grammar rules.
+Ce référentiel contient du code pour définir une grammaire hors contexte et implémenter des procédures d'analyse pour un langage simple. Le langage comprend un ensemble de symboles non terminaux (*VN*) et une table d'analyse (*TA*) pour faciliter l'analyse syntaxique. Le code fourni comprend des fonctions pour analyser les chaînes d'entrée selon les règles de grammaire définies.
 
-## Context-Free Grammar
-The grammar is defined with the following non-terminal symbols:
+## Grammaire hors contexte
+La grammaire est définie avec les symboles non terminaux suivants :
 - `<Programme>`
 - `<liste_declarations>`
 - `<une_declaration>`
@@ -16,45 +16,45 @@ The grammar is defined with the following non-terminal symbols:
 - `<condition>`
 - `<operateur>`
 
-## Analysis Table (TA)
-The analysis table (*TA*) is implemented as nested dictionaries to facilitate parsing according to the grammar rules. It maps terminal symbols to the corresponding production rules.
+## Table d'analyse (*TA*)
+La table d'analyse (*TA*) est implémentée sous forme de dictionnaires imbriqués pour faciliter l'analyse selon les règles de grammaire. Elle associe les symboles terminaux aux règles de production correspondantes.
 
-## Code Structure
-The code consists of the following main components:
+## Structure du code
+Le code se compose des composants principaux suivants :
 
-1. **Definition of VN and TA**: 
-   - *VN*: Set of non-terminal symbols.
-   - *TA*: Analysis table mapping terminal symbols to production rules.
+1. **Définition de VN et TA** : 
+   - *VN* : Ensemble de symboles non terminaux.
+   - *TA* : Table d'analyse associant les symboles terminaux aux règles de production.
 
-2. **Parsing Functions**:
-   - `empiler_regle(pile, regle)`: Function to push a rule onto the stack.
-   - `analyse(chaine)`: Function to perform analysis on input strings based on the grammar rules.
+2. **Fonctions d'analyse** :
+   - `empiler_regle(pile, regle)` : Fonction pour pousser une règle sur la pile.
+   - `analyse(chaine)` : Fonction pour effectuer une analyse sur les chaînes d'entrée selon les règles de grammaire.
 
-3. **Input and Output**:
-   - User input is requested to provide the string to be analyzed.
-   - Analysis results, including any applied reduction rules, are displayed to the user.
+3. **Entrée et sortie** :
+   - Une entrée utilisateur est demandée pour fournir la chaîne à analyser.
+   - Les résultats de l'analyse, y compris les règles de réduction appliquées, sont affichés à l'utilisateur.
 
-## Usage
-To use this code, follow these steps:
-1. Clone the repository to your local machine.
-2. Run the Python script containing the code.
-3. Follow the on-screen instructions to input the string to be analyzed.
-4. View the analysis results displayed in the console.
+## Utilisation
+Pour utiliser ce code, suivez ces étapes :
+1. Clonez le référentiel sur votre machine locale.
+2. Exécutez le script Python contenant le code.
+3. Suivez les instructions à l'écran pour entrer la chaîne à analyser.
+4. Visualisez les résultats de l'analyse affichés dans la console.
 
-## Example
-Here's an example of how to use the code:
-1. Clone the repository:
+## Exemple
+Voici un exemple d'utilisation du code :
+1. Clonez le référentiel :
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-2. Navigate to the repository directory:
+   git clone https://github.com/votre-nom-utilisateur/votre-repository.git
+2. Naviguez jusqu'au répertoire du référentiel :
      ```bash
    cd your-repository
-3. Run the Python script:
+3. Exécutez le script Python :
    ```bash
    python Mini_C_Compiler.py
 
 ## Contribution
-Contributions to this project are welcome. You can contribute by:
+Les contributions à ce projet sont les bienvenues. Vous pouvez contribuer en :
 
-Submitting bug reports or feature requests through the issue tracker.
-Proposing code improvements or new features via pull requests.
+Soumettant des rapports de bogues ou des demandes de fonctionnalités via le suivi des problèmes.
+Proposant des améliorations de code ou de nouvelles fonctionnalités via des demandes de tirage.
