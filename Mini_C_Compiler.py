@@ -10,6 +10,7 @@ VN = {
 #Deux dictionnaires imbriqués qui nous permettent de mettre en oeuvre une table d'analyse pour notre grammaire 
 #la faculté avec les dictionnaire c'est leur strucutre <clé, valeur> pour notre cas on a : 
 #Dictionaire 1 : <Clé=Symbole Terminale,Valeur=Le symbole reconnu et la règle qui le,produit <Clé=Symbole Terminal, Valeur = Règle>>
+
 TA = {
     '<Programme>': {'main(){': 'main(){ <liste_declarations> <liste_instructions> } $'},
     '<liste_declarations>': {'int': '<une_declaration> <liste_declarations>', 'float': '<une_declaration> <liste_declarations>', '}': '$', 'id': '$', 'if': '$'},
